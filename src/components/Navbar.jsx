@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBars, faCheckSquare, faCoffee, faHamburger, faHome, faPizzaSlice, faTv } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faHome, faTv } from '@fortawesome/free-solid-svg-icons'
 import { MyMovie } from "../context/database"
 import { useContext } from "react"
 

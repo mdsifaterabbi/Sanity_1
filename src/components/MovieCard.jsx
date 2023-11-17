@@ -14,7 +14,7 @@ const MovieCard = ({ movieInfo }) => {
     const { movieName, imageUrl, _id, category, cast, shortDesc } = movieInfo;
 
     //console.log(<PortableText value={cast} />); //successfully done in html
-    console.log(<PortableText value={shortDesc} />); //successfully done in html
+    //console.log(<PortableText value={shortDesc} />); //successfully done in html
 
     const {addCardFunction} = useContext(MyMovie);
 

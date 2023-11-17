@@ -23,7 +23,8 @@ import { MyMovie } from '../context/database';
 
 const MovieSlider = () => {
 
-    const { movies } = useContext(MyMovie);
+    //const { movies } = useContext(MyMovie);
+    const { moviesForMovieSlider } = useContext(MyMovie);
 
     return (
 
@@ -49,12 +50,8 @@ const MovieSlider = () => {
 
 
                 {
-                    movies.map(movie => <SwiperSlide key={movie._id}><img className='movieSlider' src={movie.imageUrl} alt="Movie" style={{ width: '300px', height: 'auto' ,marginTop: '20px', marginBottom: '20px', borderRadius: '30px' }} /></SwiperSlide>)
+                    moviesForMovieSlider.map(movie => <SwiperSlide key={movie._id}><img className='movieSlider' src={movie.imageUrl} alt="Movie" style={{ width: '300px', height: 'auto' ,marginTop: '20px', marginBottom: '20px', borderRadius: '30px' }} /></SwiperSlide>)
                 }
-
-                {/* <SwiperSlide><img src={golmal} alt="Movie" style={{ marginTop: '20px', marginBottom: '20px', borderRadius: '30px' }} /></SwiperSlide>
-                <SwiperSlide><img src={gadar} alt="Movie" style={{ marginTop: '20px', marginBottom: '20px', borderRadius: '30px' }} /></SwiperSlide>
-                <SwiperSlide><img src={jawan} alt="Movie" style={{ marginTop: '20px', marginBottom: '20px', borderRadius: '30px' }} /></SwiperSlide> */}
 
 
             </Swiper>
